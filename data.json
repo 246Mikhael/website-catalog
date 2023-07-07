@@ -1,0 +1,32 @@
+[
+    {
+        "category": "новости",
+        "subCategory": "политика",
+        "name": "сайт",
+        "domain": "шщрщнршщ",
+        "description": "рщшпп",
+        "icon": "",
+        "screenShot": "",
+        "link": "https://..."
+    },
+    {
+        "category": "новости",
+        "subCategory": "спорт",
+        "name": "сайт1",
+        "domain": "шщрщнршщ",
+        "description": "рщшпп",
+        "icon": "",
+        "screenShot": "",
+        "link": "https://..."
+    },
+    {
+        "category": "новости",
+        "subCategory": "спорт",
+        "name": "сайт122",
+        "domain": "шщрщнршщ",
+        "description": "рщшпп",
+        "icon": "",
+        "screenShot": "",
+        "link": "https://..."
+    }
+]
