@@ -1,9 +1,7 @@
 {
   "name": "website-catalog",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
- 
   "main": "index.js",
   "scripts": {
     "build": "webpack"
@@ -19,5 +17,14 @@
   "devDependencies": {
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/246Mikhael/website-catalog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/246Mikhael/website-catalog/issues"
+  },
+  "homepage": "https://github.com/246Mikhael/website-catalog#readme",
+  "description": ""
 }
