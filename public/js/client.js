@@ -1,4 +1,4 @@
-//import { translater } from "../../translater.js";
+import { translater } from "../../translater.js";
 
 
 let categSelect = document.querySelector("#categ");
@@ -28,7 +28,7 @@ for(subCateg of categories[0].values){
 
 categSelect.addEventListener('change', function () {
     subCategSelect.innerHTML = "";
-   
+
     let index = categories.findIndex( item => item.name ===  translater(this.value));
      
     for(subCateg of categories[index].values){
@@ -39,7 +39,7 @@ categSelect.addEventListener('change', function () {
     }
 });
 
-
+/*
 function translater (word){
     if(/[a-zA-Z]/.test(word)){
        if (word == 'news'){
@@ -67,5 +67,5 @@ function translater (word){
     return word;
 }
 
-
+*/
 
