@@ -1,0 +1,256 @@
+#images-wrap {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.img-wrap {
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 5px solid #DE8214;
+    border-radius: 10px;
+    background-color: white; 
+    box-shadow: 7px 7px 7px #149EDE;
+}
+
+.initial-img-wrap {
+    border: 7px solid #DE8214;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    background-color: white; 
+    position: relative;
+}
+
+.increased-img-wrap {
+    border: 7px solid #DE8214;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    background-color: white; 
+    box-shadow: 10px 10px 10px #149EDE;
+
+}
+
+
+
+.login-image {
+    width: 100%;
+}
+
+
+.categ-name {
+    font-size: 40px;
+    font-family: "bowler";
+    position: absolute;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#initial-name {
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center; 
+    margin-top: 115%; 
+    font-family: "bowler";
+}
+
+.subcateg-name {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -130%;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "bowler";
+}
+
+
+
+#images-wrap-subcateg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 200px;   
+}
+
+.img-wrap-subcateg {
+    width: 22%;
+    box-sizing: border-box;
+    border: 5px solid #DE8214;
+    border-radius: 10px;
+    background-color: white; 
+    box-shadow: 7px 7px 7px #149EDE;
+}
+
+.increased-img-wrap-subcateg {
+    border: 5px solid #DE8214;
+    height: 100%;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    background-color: white; 
+}
+
+.login-image-subcateg {
+    width: 100%;
+}
+
+#greeting-text-upper {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    font-size: 30px;
+    color: #DE8214;
+    text-align: center;
+    font-family: "bowler";
+}
+
+#greeting-text-lower {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    color: #DE8214;
+    font-family: "bowler";
+
+}
+
+#fourth-login-image + div {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#fourth-loginImage + div {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#second-loginImage + div {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+@media (max-width:1280px) {
+    #images-wrap {
+        margin-top: 60px;
+    }
+    .img-wrap {
+        width: 25%;
+        
+    }
+    #images-wrap-subcateg {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;   
+    }
+    .img-wrap-subcateg {
+        width: 25%;
+    }
+}
+ 
+
+
+@media (max-width: 599px) {
+    .categ-name, #initial-name, .subcateg-name {
+        font-size: 20px;
+    } 
+    #initial-name {
+        margin-top: 145%;
+    }
+    .subcateg-name {
+        margin-top: -150%;
+    }
+}
+
+@media (max-width: 399px) {
+    .subcateg-name {
+        margin-top: -180%;
+    }
+}   
+@media (min-width: 600px) and (max-width: 799px){
+    #greeting-text-upper, #greeting-text-lower {
+        font-size: 30px;   
+    }
+    #greeting-text-upper {
+        margin-top: 100px;
+    }
+    #greeting-text-lower {
+        margin-top: 200px;
+    }
+    .categ-name, #initial-name, .subcateg-name {
+        font-size: 25px;
+    }
+    
+}
+
+
+@media (min-width: 800px) and (max-width: 1600px){
+    #greeting-text-upper, #greeting-text-lower {
+        font-size: 50px;   
+    }
+    #greeting-text-upper {
+        margin-top: 100px;
+    }
+    #greeting-text-lower {
+        margin-top: 200px;
+    }
+    .categ-name, #initial-name, .subcateg-name {
+        font-size: 30px;
+    }
+    
+}
+
+@media (min-width: 1601px) and (max-width: 2799px){
+    #greeting-text-upper {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 100px;
+        
+    }
+    
+    #greeting-text-lower {
+        margin-top: 150px;
+        margin-bottom: 200px;
+        font-size: 100px;
+    }
+    .categ-name, #initial-name, .subcateg-name {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 2800px) {
+    #greeting-text-upper {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        font-size: 140px;
+        
+    }
+    
+    #greeting-text-lower {
+        margin-top: 200px;
+        margin-bottom: 300px;
+        font-size: 120px;
+    }    
+    .categ-name, #initial-name {
+        font-size: 60px;
+    }
+    .subcateg-name {
+        font-size: 60px;
+    }
+
+}

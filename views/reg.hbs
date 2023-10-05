@@ -1,0 +1,19 @@
+<div id="reg-forms">
+  <form method="POST" action="" enctype="multipart/form-data" id="reg-form">
+   <input placeholder="имя (от 5 символов)" name="userName" id="reg-name">
+   <input type="password" placeholder="пароль (от 5 символов)" name="password" autocomplete="on" id="reg-password">
+   <input type="submit" value="отправить" id="reg-button" class="disable-button ">
+  </form>
+
+  <form method="GET" action="/" id="cancel-reg-form">
+    <input type="submit" value="отменить" id="cancel-reg-button">
+  </form>
+  </div>
+
+<div id="invalid-message-reg">
+   {{text}}
+</div>
+
+{{> greetingBlock}}
+
+<script defer src="/dist/script2.bundle.js"></script>  

@@ -1,0 +1,274 @@
+#login-forms, #reg-forms {
+    display: flex;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+
+#login-form, #reg-form {
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-name, #user-password, #reg-name, #reg-password {
+    width: 35%;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 30px;
+    outline: none;
+    border: 5px solid #DE8214;
+}
+.valid-login {
+    border: 5px solid #DE8214;
+}
+
+.invalid-login {
+    border: 5px solid red;
+}
+
+#submit-button, #reg-button {
+    height: 80px;
+    width: 20%;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #149EDE;
+    border-style: none;
+}
+
+#submit-button:hover,  #reg-button:hover{
+    cursor: pointer;
+    color: #30beff;  
+}
+
+#form-go-reg, #cancel-reg-form {
+    width: 14%;
+}
+
+#button-go-reg, #cancel-reg-button {
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #149EDE;
+    border-style: none;
+}
+
+#button-go-reg:hover, #cancel-reg-button:hover {
+    cursor: pointer;
+    color: #30beff;
+}
+
+#invalid-message-login, #invalid-message-reg {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 20%;
+    font-size: 25px;
+    color: red;
+    margin-top: 50px;
+}
+@media (max-width: 580px) {
+    #button-go-reg {
+        font-size: 18px;
+    }
+    #reg-button {
+        font-size: 18px;
+    }
+    #user-name, #user-password, #reg-name, #reg-password {
+        height: 60px;
+        font-size: 20px;
+    }
+    #submit-button, #reg-button {
+        height: 60px;
+        font-size: 20px;
+    }
+    #button-go-reg, #cancel-reg-button {
+        height: 60px;
+        font-size: 20px;
+    }
+    #logout-window  {
+        font-size: 30px;
+    }
+    #check-logout-true-button, #check-logout-false-button {
+        font-size: 25px;
+    }
+}    
+
+@media (min-width: 581px) and (max-width: 800px) {
+    #button-go-reg, #cancel-reg-button {
+        margin-top: -17px;
+    }
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: 90px;
+    }
+}
+
+@media  (max-width: 1200px) {
+
+    #login-forms, #reg-forms {
+        display: block;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    
+    #login-form, #reg-form{
+        width: 100%;
+        display: block;
+        float: left;
+        margin-bottom: 50px;
+    }
+    
+    #user-name, #user-password, #reg-name, #reg-password {
+        margin-top: 30px;
+        width: 100%;
+        float: right;
+    }
+   
+    #submit-button, #reg-button {
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    #form-go-reg, #cancel-reg-form  {
+        float: right;
+        width: 40%;
+        margin-top: -110px;
+    }
+
+    
+    #invalid-message-login, #invalid-message-reg {
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+}
+
+@media (max-width: 469px) {
+    #login-form, #reg-form {
+        margin-top: -100px;
+    }  
+}
+@media (min-width: 470px) and (max-width: 800px) {
+
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: -80px;
+    }
+    #login-form, #reg-form {
+        margin-top: -60px;
+    }
+}
+
+
+@media (min-width: 801px) and (max-width: 1600px) {
+    #user-name, #user-password, #reg-name, #reg-password {
+        height: 80px;
+        font-size: 25px;
+    }
+    #submit-button, #reg-button {
+        height: 80px;
+        font-size: 25px;
+    }
+    #form-go-reg, #cancel-reg-form {
+        height: 80px;
+    }
+   
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: -80px;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px){
+    #button-go-reg, #cancel-reg-button {
+        height: 80px;
+        font-size: 30px;
+        margin-top: -20px;
+    }
+    #login-form, #reg-form {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px){
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: 30px;
+        margin-left: 10%;
+        font-size: 35px;
+    }
+    #button-go-reg, #cancel-reg-button {
+        height: 80px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 2799px) {
+    #login-forms, #reg-forms {
+        margin-top: 150px; 
+        width: 90%;  
+        margin-left: 5%; 
+        height: 100px;
+    }
+    #user-name, #user-password, #reg-name, #reg-password {
+        width: 38%;
+        font-size: 40px;
+        height: 100%;
+    }
+    #form-go-reg, #cancel-reg-form {
+        width: 15.5%;
+    }
+    #submit-button, #reg-button {
+        font-size: 40px;
+        height: 100px;
+    }
+    #button-go-reg, #cancel-reg-button {
+        font-size: 35px;
+        height: 100px;
+    }
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: 30px;
+        font-size: 50px;
+        margin-left: 5%;
+    }
+
+}
+
+
+@media (min-width: 2800px) {
+    #user-name, #user-password, #reg-name, #reg-password {
+        height: 90px;
+        font-size: 45px;
+        width: 38%;
+    }
+    #submit-button, #reg-button {
+        height: 110px;
+        font-size: 45px;
+    }
+    #form-go-reg, #cancel-reg-form {
+        height: 110px;
+        width: 15.5%;
+    }
+    #button-go-reg, #cancel-reg-button {
+        height: 110px;
+        font-size: 45px;
+    }
+    #login-forms, #reg-forms {
+        margin-top: 200px;
+        width: 90%;
+        margin-left: 5%;
+        
+    }
+    #invalid-message-login, #invalid-message-reg {
+        margin-top: 30px;
+        font-size: 55px;
+        margin-left: 5%;
+    }
+
+}
+
+
+
+
+

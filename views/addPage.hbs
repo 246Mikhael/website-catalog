@@ -1,13 +1,42 @@
-<form action="" method="POST">
-    <input id="name" name="name" placeholder="название сайта">
-    <select name="categ" id="categ" placeholder="категория">
+<div id="add-page-nav">
+     <a href="/categ/{{category}}" id="add-page-link-goback">
+       <div id="text-goback-link">назад</div>
+     </a>
+</div>   
+
+<form action="" method="POST" id="add-page-form" enctype="multipart/form-data">
+
+  <div id="first-wrap-add-page-form">
+    <div id="upload-wrap" class="not-dragover">
+        <img id="upload-image" src="/images/upload.png">
+        <input type="file" name="upload" id="add-page-upload">
+        <div id="text-upload">
+           <label for="add-page-upload" id="label-upload">выберите файл</label>
+           <span id="drag-text">или перетащите его сюда</span>
+        </div> 
+    </div> 
+    <div id="wrap-inputs">
+        <div class="subwrap-infirstwrap">
+        <input id="add-page-name" name="name" placeholder="название сайта">
+        <input name="link" id="add-page-link" placeholder="ссылка на ресурс">
+      </div>
+      <div class="subwrap-infirstwrap">
+        <select name="categ" id="add-page-categ-select" placeholder="категория"></select>   
+        <select name="subCateg" id="add-page-subcateg-select" placeholder="категория"></select> 
+      </div>
+      <textarea name="descr" id="add-page-descr">Добавьте описание сайта</textarea>
         
-    </select>   
-    <select name="subCateg" id="subCateg" placeholder="категория">
-        
-    </select>  
-    <input name="domain" placeholder="доменное имя">
-    <textarea name="descr" placeholder="краткое описание"></textarea>
-    <input name="link" placeholder="ссылка на ресурс">
-    <input type="submit">
+    </div>
+    </div>    
+  </div>
+
+
+  <div id="second-wrap-add-page-form">   
+     <input type="submit" id="add-page-submit-input" class="disable-button">
+  </div> 
+  
 </form>
+
+
+
+<script defer src="/dist/script4.bundle.js"></script> 

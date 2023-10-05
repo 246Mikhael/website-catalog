@@ -1,6 +1,21 @@
-<ul>
-   {{#each sitesOfCategory }}
-    <li><img src="/images/{{translater this}}.png" class="categ-img" alt="image"> <a href="/subcateg/{{this}}">{{this}}</a></li>
+<div id="subcateg-page-nav">
+   <form action="/categ" method="GET" id="subcateg-page-form ">
+   <input type="submit" value="на главную" id="subcateg-page-gotomain-button">
+</form>
+</div>
+<div id="categories-wrap">
+   {{#each sitesOfCategory }} 
+
+    <div class="category-wrap">
+      <a href="/subcateg/{{this}}">
+         <img src="/images/icons/{{translater this}}.png" class="categ-img" alt="image">
+      </a>
+      <div class="name-subcateg-div">{{this}}</div> 
+    </div>
    {{/each}}
-</ul> 
+</div> 
+
+
+<script defer src="/dist/script6.bundle.js"></script>  
+
  

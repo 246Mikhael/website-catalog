@@ -1,0 +1,432 @@
+#upload:hover {
+    cursor: pointer;
+}
+
+#submit-input:hover {
+    cursor: pointer;
+}
+#add-page-nav {
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+}
+#add-page-link-goback {
+    display: block;
+    height: 65px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #149EDE;
+    background-color: white;
+    text-decoration: none;
+}
+
+#text-goback-link {
+   font-size: 40px;
+   padding: 0 auto;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   padding-top: 8px;
+}
+
+#text-goback-link:hover {
+    color: #149EDE;
+}
+
+/*---------------------------------------------------*/
+#add-page-form {
+    display: flex;
+    padding-left: 10%;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: space-between;
+}
+#first-wrap-add-page-form {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#wrap-inputs {
+    width: 65%;
+}
+
+.subwrap-infirstwrap {
+    margin-bottom: 120px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-page-name, #add-page-link {
+    height: 100%;
+    width: 45%;
+    border: 5px solid #DE8214;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #149EDE;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+}
+#add-page-name:hover, #add-page-link:hover {
+    box-shadow: 0px 0px 0px #149EDE;
+ }
+
+
+#add-page-categ-select, #add-page-subcateg-select{
+    height: 118%;
+    width: 46%;
+    border: 5px solid #DE8214;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #149EDE;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+}
+#add-page-categ-select:hover, #add-page-subcateg-select:hover {
+    box-shadow: 0px 0px 0px #149EDE;
+    cursor: pointer;
+    color: #149EDE;
+}
+
+#add-page-descr {
+    height: 300px;
+    width: 100%;
+    outline: none;
+    border: 5px solid #DE8214;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #149EDE;
+    resize: none;
+    font-size: 30px;
+}
+#add-page-descr:hover {
+    box-shadow: 0px 0px 0px #149EDE; 
+}
+
+#second-wrap-add-page-form {
+    height: 75px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#add-page-upload {
+    height: 100%;
+}
+#add-page-submit-input {
+    height: 100%;
+    width: 30%;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #149EDE;
+    border-style: none;
+}
+#add-page-submit-input:hover {
+    cursor: pointer;
+    color: #30beff; 
+}
+
+#upload-wrap {
+   width: 30%;
+   font-size: 30px;
+   border: 5px solid #DE8214;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #149EDE;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+#text-upload {
+    position: absolute;
+    z-index: 1000;
+    bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+#label-upload {
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+#label-upload:hover {
+    color: #149EDE;
+}
+#add-page-upload {
+    z-index: -10;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+#upload-image {
+    width: 100%;
+    z-index: -1;
+}
+
+.uploaded-img {
+    top: 0px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    z-index: -1;
+}
+.not-dragover {
+    background-color: white;
+}
+.dragover {
+    background-color: #30beff;
+}
+
+@media (max-width: 1600px) {
+    #add-page-link-goback {
+        width: 100%;
+    }
+    .subwrap-infirstwrap {
+       flex-direction: column;
+       height: 200px;
+       margin-top: -40px;
+    }
+    #add-page-name, #add-page-link {
+        width: 100%;
+        height: 65px;
+        box-sizing: border-box;
+    }
+   
+    #add-page-categ-select, #add-page-subcateg-select {
+        width: 100%;
+        height: 65px;
+    }
+
+    #upload-wrap {
+        width: 98%;
+        height: 300px;
+        margin-top: -40px;
+    }
+    #wrap-inputs {
+    width: 100%;
+    margin-top: 100px;
+    }
+    #add-page-descr {
+        height: 200px;
+        margin-top: -40px;
+        width: 97%;
+    }
+
+    #first-wrap-add-page-form {
+        flex-direction: column;
+        
+    }
+    #drag-text {
+        visibility: hidden;
+        z-index: -1;
+    }
+    #label-upload {
+        width: 60%;
+        display: block;
+        margin-left: 20%;
+    }
+   
+    #label-upload:hover {
+        color: #30beff; 
+    }
+    #text-upload {
+        border: 5px solid #DE8214;
+        border-radius: 15px;
+        height: 65px;
+        width: 100%;
+        position: absolute;
+        padding-top: 5px;
+        box-sizing: border-box;
+        font-weight: lighter;
+        font-size: 38px;
+    }
+    #upload-image {
+        width: 50%;
+        margin-left: 25%;
+    }
+    #add-page-submit-input {
+        width: 100%;
+        margin-top: -80px;
+    }
+   
+}
+@media (max-width: 419px){
+    #text-upload {
+        font-size: 22px;
+    }
+    #add-page-name, #add-page-link {
+        font-size: 20px;
+    }
+    #add-page-categ-select, #add-page-subcateg-select {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 600px) {
+    #text-upload {
+        font-size: 26px;
+        margin-bottom: -20px;
+    }
+}    
+
+@media (min-width: 800px) and (max-width: 1600px) {
+
+  
+    #text-goback-link {
+        height: 80px;
+        font-size: 50px;
+    }
+    #add-page-link-goback {
+        height: 80px;
+        width: 99%;
+    }
+    #upload-wrap {
+        height: 500px;
+    }
+    #text-upload {
+        height: 80px;
+        font-size: 50px;
+    }
+    #add-page-name, #add-page-link {
+        height: 80px;
+        width: 98%;
+        font-size: 40px;
+    }
+   
+    #add-page-categ-select, #add-page-subcateg-select {
+        height: 80px;
+        width: 98%;
+        font-size: 40px;
+    }
+    #add-page-descr {
+        height: 400px;
+        font-size:  40px;
+    }
+    #second-wrap-add-page-form {
+        height: 80px;
+    }
+} 
+
+@media (min-width: 1601px) and (max-width: 2799px) {
+   #add-page-nav {
+       margin-top: 120px;
+   }
+   #add-page-link-goback {
+       height: 100px;
+       padding-top: 10px;
+       box-sizing: border-box;
+    }
+    #text-goback-link {
+        font-size: 45px;
+    } 
+    #add-page-form {
+        margin-top: 70px;
+    }  
+    .subwrap-infirstwrap {
+        height: 80px;
+    }  
+    #add-page-name, #add-page-link {
+        font-size: 40px;
+    }
+    #add-page-categ-select, #add-page-subcateg-select{
+        font-size: 40px;
+    }
+    #add-page-descr {
+        font-size: 40px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #first-wrap-add-page-form {  
+        height: 703px;      
+    }
+   #text-upload {
+        font-size: 40px;
+        margin-bottom: 10px;
+        width: 90%;
+        left: 5%;
+   }
+   #upload-image {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 7%;
+   }
+   #drag-text {
+        font-size: 50px;
+   }
+
+   #label-upload {
+        font-size: 50px;
+   }
+   #add-page-submit-input {
+    height: 100px;
+    font-size: 45px;
+    margin-top: -50px;
+   }
+}
+
+@media (min-width: 2800px) {
+    #add-page-nav {
+        margin-top: 200px;
+    }
+    #add-page-link-goback {
+        height: 110px;
+        padding-top: 10px;
+        box-sizing: border-box;
+     }
+     #text-goback-link {
+         font-size: 50px;
+     }
+     #add-page-categ-select, #add-page-subcateg-select{
+        height: 120px;
+        font-size: 55px;
+    } 
+    #add-page-name, #add-page-link {
+        height: 110px;
+        font-size: 55px;
+    }
+    #add-page-descr {
+        font-size: 55px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        height: 500px;
+    }
+    #text-upload {
+        font-size: 40px;
+        margin-bottom: 10px;
+        width: 90%;
+        left: 5%;
+   }
+   #upload-image {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 7%;
+   }
+   #drag-text {
+        font-size: 60px;
+   }
+
+   #label-upload {
+        font-size: 60px;
+   }
+   #add-page-submit-input {
+        height: 110px;
+        font-size: 55px;
+   }
+   #add-page-form {
+        margin-top: 150px;
+   }
+}
+
+
+

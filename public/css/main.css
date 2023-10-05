@@ -1,0 +1,31 @@
+@import "categ-and-subcateg.css";
+@import "sites.css";
+@import "add.css";
+@import "login-and-reg.css";
+@import "greeting-block.css";
+@import "header.css";
+@import "footer.css";
+
+@font-face {
+  font-family: 'bowler';
+  src: url(../fonts/ofont.ru_Bowler.ttf);
+}
+
+.disable-button {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#body {
+  background-color: #C5E7F7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-y: hidden;
+  overflow-y: scroll;
+}
+
+
+

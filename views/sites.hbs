@@ -1,7 +1,45 @@
-{{#each sites}}
-   <div>название: {{this.name}}</div>
-   <div>доменное имя: {{this.domain}}</div>
-   <div>описание: {{this.description}}</div>
-   <div>ссылка: {{this.link}}</div>
-   <hr>
-{{/each}}
+{{#if message}}
+    <div id="edit-site-message">{{message}}</div>
+   
+{{/if}}
+
+<div id="sites-page-nav-wrap">
+  <form action="/categ" method="GET" id="sites-page-gotomain-form">
+    <input type="submit" value="на главную" id="sites-page-gotomain-button">
+  </form>
+  <a href="/categ/{{category}}" id="sites-page-goback-link" >назад</a>
+</div>
+
+<div id="edit-name-tooltip" class="tooltip">двойной клик для редактирования</div>
+
+
+
+<div id="sites-wrap">
+  {{#each sites}}
+  <div class="site-wrap">
+     <div id="descr-tooltip" style="visibility: hidden;">{{this.description}}</div>
+    <div class="name-domain-sites-page">
+       <div class="name-editing-site">{{this.name}}</div>
+       <div class="domain-editing-site"> {{this.domain}}</div>
+    </div>
+         
+    <div class="sites-page-link-and-img-wrap">
+      <a href="{{this.link}}" class="sites-page-link">
+        <img src="{{this.screenShot}}" class="site-page-screen-shot">
+      </a>
+    </div>
+        
+      
+  
+    <a href="/subcateg/{{this.subCategory}}/{{this._id}}/{{this.name}}" class="delete-site">
+      удалить
+    </a>
+    <div class="div-with-id">{{this._id}}</div>
+  </div> 
+
+  
+ {{/each}}
+
+</div>
+
+<script defer src="/dist/script5.bundle.js"></script> 

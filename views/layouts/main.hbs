@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title> </title>
-       <script type="text/javascript" src="/js/client.js" defer></script>
-       <script defer src="../../dist/bundle.js"></script>
-       <link rel="stylesheet" type="text/css" href="/css/style.css">
+       <title>Каталог сайтов</title>
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+        <meta charset="utf-8" name="viewport" content="width=device-width, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="icon" href="/images/icons/favicon.png">
     </head>
-    <body>
-       <header>
-
+    <body id="body">
+       <header id="header">
+          {{> header}}
        </header>
-       <main>
+       <main >
            {{{body}}}
        </main>
        <footer>
-
+         {{> footer}}
        </footer>
     </body>
 </html>

@@ -1,11 +1,58 @@
-<ul>
-    {{#each categories}}
-        <li><img src="/images/{{translater this}}.png" class="categ-img" alt="image"><a href="/categ/{{this}}">{{this}}</a></li>
-    {{/each}}
-</ul>
+<div id="categories-page-nav">
+  <form action="/add" method="GET" id="add-site-form">
+    <input type="submit" value="добавить сайт" id="add-site-button" {{#if show}}disabled {{/if}}>
+  </form>
 
-<form action="/add" method="GET">
-    <input type="submit" value="добавить сайт">
-</form>
+  <form action="/logout" method="GET" id="logout-form" >
+    <input type="submit" value="выйти" id="logout-button" {{#if show}}disabled {{/if}}>
+  </form>
+</div>  
+  
+  {{#if message}}
+      <div id="login-message">{{message}}</div>
+   {{/if}}
 
+{{#if show}}
+<div id="categories-wrap">
+   {{#each categories}}
+      
+      
+      <div class="category-wrap-inactive">
+         <a href="/categ/{{this}}" class="categories-link-disabled" >
+            <img src="/images/icons/{{translater this}}.png" class="categ-img" alt="image" > 
+         </a>  
+         <div class="name-categ-div">{{this}}</div> 
+      </div>   
+      
+      
+   {{/each}}
+</div>
+{{else}}
 
+   <div id="categories-wrap">
+   {{#each categories}}
+      
+         <div class="category-wrap">
+            <a href="/categ/{{this}}">
+               <img src="/images/icons/{{translater this}}.png" class="categ-img" alt="image" > 
+            </a> 
+            <div class="name-categ-div">{{this}}</div>
+         </div>
+   {{/each}}
+</div>
+{{/if}}
+   {{#if show}}
+      <div id="logout-window">
+         <p id="logout-window-text">Вы хотите покинуть аккаунт?</p>
+         <div id="check-logout-wrap">
+            <form action="/" method="GET" id="check-logout-true-form">
+               <input type="submit" value="Да" id="check-logout-true-button">
+            </form>
+            <form action="" method="GET" id="check-logout-false-form">
+               <input type="submit" value="Нет" id="check-logout-false-button">
+            </form>
+         </div>
+      </div>
+   {{/if}}
+
+<script defer src="/dist/script6.bundle.js"></script>  

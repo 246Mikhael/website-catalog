@@ -1,0 +1,19 @@
+<div id="login-forms">
+<form method="POST" action="" enctype="multipart/form-data" id="login-form">
+   <input placeholder="имя" id="user-name" name="userName" class="valid-login">
+   <input type="password" placeholder="пароль" id="user-password" name="password" class="valid-login">
+   <input type="submit" id="submit-button" class="disable-button" value="Войти">
+</form>
+
+<form method="GET" action="/reg" id="form-go-reg">
+    <input type="submit" value="регистрация" id="button-go-reg">
+</form>
+</div>
+
+<div id="invalid-message-login">
+   {{text}}
+</div>
+
+{{> greetingBlock}}
+
+<script defer src="/dist/script3.bundle.js"></script> 
