@@ -103,6 +103,7 @@
 
 .login-image-subcateg {
     width: 100%;
+    border-radius: 7px;
 }
 
 #greeting-text-upper {
@@ -151,7 +152,7 @@
     }
     .img-wrap {
         width: 25%;
-        
+        border: 2px solid #DE8214;        
     }
     #images-wrap-subcateg {
         width: 80%;
@@ -159,8 +160,10 @@
         margin-top: 100px;   
     }
     .img-wrap-subcateg {
-        width: 25%;
+        width: 24%;
+        border: 3px solid #DE8214;      
     }
+    
 }
  
 
