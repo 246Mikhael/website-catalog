@@ -184,7 +184,7 @@
     color: #30beff;  
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
     #categories-page-nav {
         display: flex;
         margin-top: 50px;
@@ -333,7 +333,7 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1600px) {
+@media (min-width: 800px) and (max-width: 1200px) {
 
     #login-message {
         margin-top: 03px;
@@ -368,6 +368,11 @@
         margin-top: -50px;
       }
     }
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .name-categ-div, .name-subcateg-div {
+       font-size: 23px;
+    }
+}    
 
 @media (min-width: 1601px) and (max-width: 2799px) {
    
@@ -472,4 +477,10 @@
       #add-site-button, #logout-button {
         height: 110px;
     } 
+}
+
+@media (min-width: 1200px) and (max-width: 1340px) {
+    #add-site-button {
+        font-size: 26px;
+    }
 }

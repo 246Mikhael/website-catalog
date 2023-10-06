@@ -69,9 +69,7 @@
     margin-top: 50px;
 }
 @media (max-width: 580px) {
-    #button-go-reg {
-        font-size: 18px;
-    }
+   
     #reg-button {
         font-size: 18px;
     }
@@ -268,7 +266,27 @@
 
 }
 
+@media (max-width: 420px) {
+    #button-go-reg, #cancel-reg-button, #reg-button, #submit-button {
+        font-size: 12px;
+        height: 45px;
+    }
+    #button-go-reg, #cancel-reg-button {
+        margin-top: 16px;
+    }
+    #user-name, #user-password, #reg-name, #reg-password {
+        height: 45px;
+    }
 
+    #invalid-message-reg {
+      margin-top: 70px; 
+      font-size: 20px;   
+      margin-left: 7%;
+    }
 
-
-
+    #invalid-message-login {
+      margin-top: 80px; 
+      font-size: 20px;   
+      margin-left: 10%;
+    }
+}

@@ -90,8 +90,12 @@ if (width < 980) {
   firstCharacterNav.id = "first-character";
   main.insertAdjacentElement('afterBegin', firstCharacterNav);
 
-
-  setCharacter(600, firstCharacterNav); 
+  if (width < 400) {
+    setCharacter(400, firstCharacterNav);
+  } else {
+    setCharacter(600, firstCharacterNav);
+  }
+  
      
   window.addEventListener('scroll', function (){
       setCharacter(200, firstCharacterNav);
